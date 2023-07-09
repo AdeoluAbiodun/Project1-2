@@ -1,0 +1,114 @@
+/* Format lists, background, and text */
+ul {
+  padding-left: 20px;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Pseudo-classes for hypertext links */
+a:hover {
+  color: #ff0000;
+}
+
+/* Contextual/attribute selectors */
+div[class^="Just4U"] {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive design using media queries */
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a width of 768px or less */
+  body {
+    background-color: lightblue;
+  }
+}
+
+/* Flexbox */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Pulldown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Block and floating elements */
+.float-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* Floated layout */
+.float-container {
+  width: 100%;
+}
+
+.float-item {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* Positioning */
+.relative-container {
+  position: relative;
+}
+
+.absolute-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Handle overflow */
+.overflow-container {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
