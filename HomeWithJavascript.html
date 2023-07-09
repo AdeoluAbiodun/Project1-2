@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caribbean Palate Mobile Truck Restaurant</title>
+  <!-- Link to My First CSS file -->
+  <link href="my_first.css" rel="stylesheet">
+  <!-- Additional metadata -->
+  <meta name="keywords" content="Caribbean, Charlotte, restaurant, food, flavors">
+  <meta name="description" content="Experience the vibrant flavors and rich cultural heritage of the Caribbean at Caribbean Palate Mobile Truck Restaurant.">
+  <!-- Link to My first JavaScript file -->
+  <script src="my_first_script.js"></script>
+  <style>
+    /* Additional CSS styles */
+    body {
+      background-image: linear-gradient(45deg, darkcyan, darkorchid, mediumblue, darkgoldenrod);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h2, h3 {
+      color: yellow;
+    }
+
+    p {
+      color: white;
+    }
+
+    ul {
+      color: white;
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .food-images {
+      display: flex;
+      justify-content: center;
+    }
+
+    .food-images img {
+      margin: 10px;
+      max-width: 300px;
+      height: auto;
+    }
+
+    footer {
+      background-color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      color: yellow;
+      margin: 0;
+    }
+
+    footer ul {
+      color: yellow;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer ul h5 {
+      margin: 0;
+    }
+
+    footer ul li strong {
+      font-weight: bold;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .food-images img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Caribbean Palate Mobile Truck Restaurant</h1>
+    <nav>
+      <!-- Navigation list -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Contact/Follow Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p><strong>Caribbean Palate Mobile Truck Restaurant is an exceptional culinary endeavor that strives to bring the lively flavors and cultural richness of the Caribbean to diverse locations in Charlotte, NC and its surrounding metropolitan area.</strong></p>
+  </section>
+
+  <footer>
+    <p><em>Every bit is a promise kept!</em></p>
+</br>
+    <ul>
+      <h5>
+        <li><strong>Freshness</strong> from a wide array of fruits and vegetables.</li>
+        <li><strong>Bursts with flavor</strong> through the harmonious combination of healthy spices and the use of nutritious cooking techniques.</li>
+      </h5>
+    </ul>
+  </footer>
+
+  <div>
+    <h3>Special Offers</h3>
+    <ul>
+      <li>20% off on Mondays</li>
+      <li>Free dessert with every meal</li>
+    </ul>
+  </div>
+
+  <!-- Online Caribbean food images -->
+  <section>
+    <h3>Samples of our Menu</h3>
+    <div class="food-images">
+      <img src="https://example.com/caribbean_food1.jpg" alt="Just4U">
+      <img src="https://example.com/caribbean_food2.jpg" alt="Just4U">
+    </div>
+  </section>
+
+  <!-- Sectioning element -->
+  <section>
+    <h2>Menu</h2>
+    <article>
+      <h3>Appetizers</h3>
+      <p>Try our delicious plantain chips served with homemade salsa.</p>
+    </article>
+    <article>
+      <h3>Main Course</h3>
+      <p>Indulge in our mouthwatering jerk chicken served with rice and peas.</p>
+    </article>
+  </section>
+
+  <p>We strive to provide the best dining experience for our customers.</p>
+  <p>Contact us for catering services.</p>
+
+  <!-- Request form for catering services -->
+  <h2>Request: Catering Services</h2>
+  <form>
+    <fieldset>
+      <legend style="color: yellow">Personal Information</legend>
+      <label for="name" style="color: yellowgreen">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="message" style="color: yellowgreen">Your Request:</label>
+      <textarea id="message" rows="4" cols="30"></textarea>
+
+      <label for="phone" style="color: yellowgreen">Phone:</label>
+      <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
+    </fieldset>
+
+    <button type="submit" onclick="validateForm()">Submit</button>
+  </form>
+
+  <script>
+    // JavaScript functions
+    function getCurrentDateTime() {
+      var currentDate = new Date();
+      return currentDate;
+    }
+
+    function useMathMethod() {
+      var number = Math.random();
+      console.log(number);
+    }
+
+    function delayCommand() {
+      setTimeout(function() {
+        console.log("Delayed command executed");
+      }, 3000);
+    }
+
+    function runAtInterval() {
+      setInterval(function() {
+        console.log("Command executed at interval");
+      }, 2000);
+    }
+
+    function convertNumberToText() {
+      var number = 10;
+      var text = number.toString();
+      console.log(text);
+    }
+
+    function convertTextToNumber() {
+      var text = "20";
+      var number = parseInt(text);
+      console.log(number);
+    }
+
+    function countdown(seconds) {
+      var count = seconds;
+      var countdownInterval = setInterval(function() {
+        console.log(count);
+        count--;
+        if (count < 0) {
+          clearInterval(countdownInterval);
+          console.log("Countdown complete!");
+        }
+      }, 1000);
+    }
+
+    // Call JavaScript functions
+    var currentDateTime = getCurrentDateTime();
+    console.log(currentDateTime);
+
+    showAlert();
+
+    useMathMethod();
+
+    delayCommand();
+
+    runAtInterval();
+
+    convertNumberToText();
+
+    convertTextToNumber();
+
+    countdown(10);
+  </script>
+</body>
+</html>

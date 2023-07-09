@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations - Caribbean Palate Mobile Truck Restaurant</title>
+  <link href="my_second.css" rel="stylesheet">
+  <style>
+    /*  Just adding the below CSS Styles in case my second ccs doesn't work*/
+    body {
+      background-image: linear-gradient(45deg, #008080, #0000CD, #B8860B);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: yellow;
+      text-align: center;
+    }
+
+    h2, h3, h4 {
+      color: yellow;
+      font-style: italic;
+    }
+
+    p {
+      color: yellowgreen;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: white;
+    }
+
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: yellow;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Locations</h1>
+    <p><strong style="color: white;"> Our location details and addresses are below:</strong></p>
+    <!-- Our location details and addresses are below -->
+    <section>
+      <h3>Southpark</h3>
+      <p>1234, Southpark Mall, Charlotte, NC28211</p>
+    </section>
+
+    <section>
+      <h3>Huntersville</h3>
+      <p>7645, River Fall Ln, Huntersville, NC28070</p>
+    </section>
+
+    <section>
+      <h3>Forest Point Blvd</h3>
+      <p>5678, Forest Point, Charlotte, NC28105</p>
+    </section>
+
+    <section>
+      <h3>Clover</h3>
+      <p>7890, Lyke Wylie, Clover, SC29067</p>
+    </section>
+
+  </br>
+
+    <p><strong><em style="color: white;">We appreciate your feedback:</em></strong></p>
+
+    <!-- Feedback Form -->
+    <form>
+      <fieldset>
+        <legend><strong style="color: yellow;">Feedback</strong></legend>
+        <label for="message"><strong><em>Message:</em></strong></label>
+        <textarea id="message" rows="4" cols="30"></textarea>
+        
+        <br>
+        <br>
+        
+        <label for="rating"><strong><em>Rate our service:</em></strong></label>
+        <select id="rating">
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+      </fieldset>
+      
+      <input type="submit" value="Submit">
+    </form>
+
+    <script>
+      // JavaScript functions
+      function getCurrentDateTime() {
+        var currentDate = new Date();
+        return currentDate;
+      }
+
+      function showAlert() {
+        alert("Our Location!");
+      }
+
+      function useMathMethod() {
+        var randomNum = Math.random();
+        console.log(randomNum);
+      }
+
+      function delayCommand() {
+        setTimeout(function() {
+          console.log("Delayed command executed");
+        }, 3000);
+      }
+
+      function runAtInterval() {
+        setInterval(function() {
+          console.log("Command executed at interval");
+        }, 2000);
+      }
+
+      function convertNumberToText() {
+        var number = 10;
+        var text = number.toString();
+        console.log(text);
+      }
+
+      function convertTextToNumber() {
+        var text = "20";
+        var number = parseInt(text);
+        console.log(number);
+      }
+
+      function countdown(seconds) {
+        var count = seconds;
+        var countdownInterval = setInterval(function() {
+          console.log(count);
+          count--;
+          if (count < 0) {
+            clearInterval(countdownInterval);
+            console.log("Countdown complete!");
+          }
+        }, 1000);
+      }
+
+      // Call JavaScript functions
+      var currentDateTime = getCurrentDateTime();
+      console.log(currentDateTime);
+
+      showAlert();
+
+      useMathMethod();
+
+      delayCommand();
+
+      runAtInterval();
+
+      convertNumberToText();
+
+      convertTextToNumber();
+
+      countdown(10);
+    </script>
+  </main>
+</body>
+</html>
